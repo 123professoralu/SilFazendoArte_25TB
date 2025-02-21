@@ -1,0 +1,40 @@
+/*Estilização do BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+/*Estização do HEADER da página*/
+header{
+    background-color: purple;
+    padding: 40px 0 40px 250px;
+}
+
+.logo {
+    width: 20%;
+}
+/*Estilização do MENU do site*/
+nav {
+    color: white;
+    font-size: 28;
+    right: 100px;
+    top: 40px;
+    position: absolute;
+}
+
+nav li{
+    display: inline;
+    margin-right: 80px;
+}
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+
+/*Estilização do BANNER abaixo do header*/
+.banner {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
