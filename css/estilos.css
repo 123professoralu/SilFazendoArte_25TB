@@ -1,40 +1,55 @@
-/*Estilização do BODY da página*/
-body{
+/*Estilização do BODY do site*/
+body {
     margin: 0;
     border: 0;
     font-family: 'Tahoma', 'Arial';
 }
-/*Estização do HEADER da página*/
-header{
-    background-color: purple;
-    padding: 40px 0 40px 250px;
-}
-
 .logo {
-    width: 20%;
+    width: 15%;
+    margin: 25px 0 0 280px;
+}
+/*Estilização do HEADER do site*/
+header {
+    background-color: rgb(102,0,102);
+}
+/*Estilização da DIV do header*/
+.divHeader {
+    position: relative;
+    margin: auto;
+    padding-bottom: 50px;
 }
 /*Estilização do MENU do site*/
 nav {
-    color: white;
-    font-size: 28;
-    right: 100px;
-    top: 40px;
     position: absolute;
+    top: 70px;
+    right: 200px;
 }
-
 nav li{
     display: inline;
-    margin-right: 80px;
+    color: white;
+    font-size: 28;
+    margin-right: 15px;
 }
-
-/*Estilização da DIV do header */
-.divHeader {
-    position: relative;
-}
-
-/*Estilização do BANNER abaixo do header*/
 .banner {
     width: 100%;
     height: 40%;
     object-fit: cover;
+}
+
+/*Estilização da sessão SOBRE NÓS*/
+.sobre_nos {
+    margin: 0;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+}
+/*Imagem do sobre nós*/
+.img_sobrenos {
+    width: 10%;
+    float: left;
+    margin-right: 20px;
+}
+.titulo_sobrenos {
+    clear: left;
+    text-align: center;
 }
