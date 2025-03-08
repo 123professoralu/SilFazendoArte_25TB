@@ -1,35 +1,38 @@
-/*Estilização do BODY do site*/
-body {
+/*Estilização do BODY da página*/
+body{
     margin: 0;
     border: 0;
     font-family: 'Tahoma', 'Arial';
 }
+/*Estização do HEADER da página*/
+header{
+    background-color: purple;
+    padding: 40px 0 40px 250px;
+}
+
 .logo {
-    width: 15%;
-    margin: 25px 0 0 280px;
-}
-/*Estilização do HEADER do site*/
-header {
-    background-color: rgb(102,0,102);
-}
-/*Estilização da DIV do header*/
-.divHeader {
-    position: relative;
-    margin: auto;
-    padding-bottom: 50px;
+    width: 20%;
 }
 /*Estilização do MENU do site*/
 nav {
-    position: absolute;
-    top: 70px;
-    right: 200px;
-}
-nav li{
-    display: inline;
     color: white;
     font-size: 28;
-    margin-right: 15px;
+    right: 100px;
+    top: 40px;
+    position: absolute;
 }
+
+nav li{
+    display: inline;
+    margin-right: 80px;
+}
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+
+/*Estilização do BANNER abaixo do header*/
 .banner {
     width: 100%;
     height: 40%;
@@ -40,16 +43,56 @@ nav li{
 .sobre_nos {
     margin: 0;
     text-align: justify;
-    width: 60%;
-    margin-left: 20%;
+    width: 70%;
+    margin-left: 15%;
 }
-/*Imagem do sobre nós*/
 .img_sobrenos {
-    width: 10%;
+    width: 15%;
     float: left;
     margin-right: 20px;
 }
 .titulo_sobrenos {
-    clear: left;
     text-align: center;
+    clear: left;
+}
+/*Estilização da sessão NOSSO ESTABELECIMENTO*/
+.mapaGeral {
+    background: linear-gradient(#FFFFFF, #C9C1E5);
+}
+.mapaGeral p{
+    text-align: center;
+}
+.mapa {
+    margin-left: 20%;
+}
+/*Estilização da sessão NOSSOS PRODUTOS*/
+.nossosprodutos{
+    padding: 2%;
+    background: linear-gradient(#C9C1E5, rgb(102,0,102));
+}
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 30%;
+}
+.img_nossosprodutos{
+    width: 15%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px #000000;
+    opacity: 1;
+    transition: 400ms;
+}
+.img_nossosprodutos:hover{
+    opacity: 0.5;
+}
+.lista_nossosprodutos{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+    content: "★ ";
 }
