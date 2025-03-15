@@ -57,7 +57,7 @@ nav li{
 }
 /*Estilização da sessão NOSSO ESTABELECIMENTO*/
 .mapaGeral {
-    background: linear-gradient(#FFFFFF, #C9C1E5);
+    background: linear-gradient(#FFFFFF, #dad4f1);
 }
 .mapaGeral p{
     text-align: center;
@@ -68,11 +68,23 @@ nav li{
 /*Estilização da sessão NOSSOS PRODUTOS*/
 .nossosprodutos{
     padding: 2%;
-    background: linear-gradient(#C9C1E5, rgb(102,0,102));
+    background: linear-gradient(#dad4f1, rgb(180, 111, 180));
 }
 .div_nossosprodutos{
     width: 70%;
     margin-left: 30%;
+}
+.lista_nossosprodutos{
+    width: 30%;
+    display: inline-block;
+    vertical-align: "top";
+    list-style: none;
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+    content: "★ ";
 }
 .img_nossosprodutos{
     width: 15%;
@@ -84,15 +96,31 @@ nav li{
 .img_nossosprodutos:hover{
     opacity: 0.5;
 }
-.lista_nossosprodutos{
-    width: 20%;
+.video{
+    padding: 3% 0 0 20%;
+}
+/*Estilização do FOOTER*/
+.logo_footer{
+    width: 15%;
+    padding-left: 2%;
+}
+footer p{
+    font-weight: bold;
+    color: white;
     display: inline-block;
-    vertical-align: top;
-    list-style: none;
+    text-align: right;
+    width: 82%;
+    font-size: 20px;
 }
-.lista_nossosprodutos li{
-    line-height: 2;
+
+footer {
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 50px 0 0 0;
 }
-.lista_nossosprodutos li:before{
-    content: "★ ";
+footer i{
+    color: white;
 }
