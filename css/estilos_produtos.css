@@ -1,0 +1,116 @@
+/*Estilização do BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: "Tahoma";
+}
+/*Estização do HEADER da página*/
+header{
+    background-color: rgb(78,8,116);
+    padding: 10px 0 20px 200px;
+}
+.logo {
+    width: 10%;
+}
+main{
+    background: linear-gradient(#FFFFFF, #dad4f1)
+}
+/*Estilização do MENU do site*/
+nav {
+    color: white;
+    font-size: 26;
+    right: 3%;
+    top: -5%;
+    position: absolute;
+}
+
+nav li{
+    display: inline;
+    margin-right: 40px;
+    font-family: cursive;
+    font-size: 35px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+/*Título*/
+.produtos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(78,8,116);
+    list-style: none;
+    font-family: cursive;
+}
+.produtos-item:before{
+    content: "🐈";
+}
+/*Texto dos Produtos*/
+.texto-produtos{
+    padding-left: 5%;
+}
+
+/*Container dos cards*/
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+/*Estilização dos cards*/
+.card {
+    background: #FFFFFF;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    margin: 10px 0;
+}
+
+/*Estilização do Footer*/
+footer{
+    background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 30px 10px 10px 0;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+footer i{
+    color: white;
+}
+.logo_footer{
+    width: 12%;
+    padding-left: 85%;
+}

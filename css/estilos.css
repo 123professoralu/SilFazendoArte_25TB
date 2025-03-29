@@ -2,12 +2,12 @@
 body{
     margin: 0;
     border: 0;
-    font-family: 'Tahoma', 'Arial';
+    font-family: "Tahoma";
 }
 /*Estização do HEADER da página*/
 header{
-    background-color: purple;
-    padding: 40px 0 40px 250px;
+    background-color: rgb(78,8,116);
+    padding: 30px 0 30px 250px;
 }
 
 .logo {
@@ -25,6 +25,12 @@ nav {
 nav li{
     display: inline;
     margin-right: 80px;
+    font-family: cursive;
+    font-size: 35px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
 }
 
 /*Estilização da DIV do header */
@@ -99,28 +105,25 @@ nav li{
 .video{
     padding: 3% 0 0 20%;
 }
-/*Estilização do FOOTER*/
-.logo_footer{
-    width: 15%;
-    padding-left: 2%;
-}
-footer p{
-    font-weight: bold;
-    color: white;
-    display: inline-block;
-    text-align: right;
-    width: 82%;
-    font-size: 20px;
-}
-
-footer {
+/*Estilização do Footer*/
+footer{
     background: url("../img/fundo_rodape.png");
     background-size: cover;
     background-position: center;
-    background-color: rgb(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6);
     background-blend-mode: darken;
-    padding: 50px 0 0 0;
+    padding: 30px 10px 10px 0;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
 }
 footer i{
     color: white;
+}
+.logo_footer{
+    width: 12%;
+    padding-left: 85%;
 }
