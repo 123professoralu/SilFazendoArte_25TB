@@ -1,7 +1,7 @@
 <html>
     <head>
         <link href="css/estilos.css" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta charset="UTF-8"/>
         <title>Sil Fazendo Arte</title>
     </head>
@@ -13,13 +13,23 @@
                     <ul>
                         <li>Home</li>
                         <li><a href="produtos.html">Produtos</a></li>
-                        <li>Contato</li>
+                        <li><a href="contatos.html">Contato</a></li>
+                        <li>|</li> 
+                        <li><a href="encomendas.html">Encomendas</a></li>
                     </ul>
                 </nav>
             </div>
        </header>
-       <!--Banner-->
-       <img src="img/banner.jpeg" class="banner">
+       <!--Banner
+       <img src="img/banner.jpeg" class="banner">-->
+       <!--Carrossel-->
+        <div class="carrossel">
+            <img src="img/slider1.jpeg" alt="Imagem 1" class="banner">
+            <img src="img/slider2.jpeg" alt="Imagem 2" class="banner">
+            <img src="img/slider3.jpeg" alt="Imagem 3" class="banner">
+            <div class="carrossel-btn prev" onclick="prevSlide()">❮</div>
+            <div class="carrossel-btn next" onclick="nextSlide()">❯</div>
+        </div>
        
        <!--Conteúdo da página WEB-->
        <main>
@@ -67,13 +77,11 @@
                 </div>
             </section>
        </main>
-       <!--Rodapé-->
+       <!--Rodapé do Site-->
        <footer>
-            <img src="img/logo.png" title="Sil Fazendo Arte" class="logo_footer"/>
-            <p>Encomendas on-line: 
-                <a href="https://wa.me/5511992368297"><i class="fa fa-whatsapp"></i></a>
-                 (11) 99236-8297 | <a href="https://instagram.com/silfazendoarte_">
-                    <i class="fa fa-instagram"></i></a> @silfazendoarte_</p>
-       </footer>
+            <img src="img/logo.png" alt="Sil Fazendo Arte" class="logo_footer">
+            <p><a class="whatsapp-link" href="https://wa.me/5599111112222" target="_blank"><i class="fa fa-whatsapp"></i></a> (11) 99236-8297 | <i class="fa fa-instagram"></i> @silfazendoarte_</p>
+        </footer>
+        <script src="js/slider.js"></script>
     </body>
 </html>

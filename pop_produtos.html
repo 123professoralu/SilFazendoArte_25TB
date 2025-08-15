@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Sil Fazendo Arte</title>
+        <link href="css/estilos_produtos.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="pop">
+                <h1 id="nome-produto">Produto</h1>
+                <!-- <img id="imagem-produto" src="" alt="">                 -->
+                <div class="slider">
+                    <button id="prevBtn">&#10094;</button>
+                    <img id="slider-img" src="" alt="">
+                    <button id="nextBtn">&#10095;</button>
+                </div>
+                <p id="descricao-produto"></p> 
+                
+                <script>
+                    // Função para pegar parâmetros da URL
+                    function getParametro(nome) {
+                        const urlParams = new URLSearchParams(window.location.search);
+                        return urlParams.get(nome);
+                    }
+
+                    //Preencher os dados
+                    const nome = getParametro("nome");                    
+                    // const imagem = getParametro("imagem");
+                    const descricao = getParametro("descricao");
+
+                    document.getElementById("nome-produto").textContent = nome;
+                    // document.getElementById("imagem-produto").src = imagem;
+                    document.getElementById("descricao-produto").textContent = descricao;
+
+                    /*Controle do Slider*/
+                    const imagens=getParametro("imagem") 
+                                  ? getParametro("imagem").split(',') 
+                                  : [];
+                    let index=0;
+                    const sliderImg=document.getElementById("slider-img");
+
+                    function MostrarImagem(){
+                        if(imagens.length > 0){
+                            sliderImg.src=imagens[index];
+                        }
+                    }
+
+                    document.getElementById("prevBtn").onclick = function() {
+                        index = (index-1 + imagens.length) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    document.getElementById("nextBtn").onclick = function() {
+                        index = (index+1) % imagens.length;
+                        MostrarImagem();
+                    }
+
+                    //Exibe a primeira imagem
+                    MostrarImagem();
+                </script>
+            </div>
+        </main>
+    </body>
+</html>

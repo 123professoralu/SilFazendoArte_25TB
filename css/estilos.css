@@ -2,47 +2,42 @@
 body{
     margin: 0;
     border: 0;
-    font-family: "Tahoma";
+    font-family: 'Tahoma', 'Arial';
 }
 /*Estização do HEADER da página*/
 header{
-    background-color: rgb(78,8,116);
-    padding: 30px 0 30px 250px;
+    background-color: rgb(78, 8, 116);
+    padding: 20px 0 40px 200px;
 }
 
 .logo {
-    width: 20%;
+    width: 12%;
 }
 /*Estilização do MENU do site*/
 nav {
     color: white;
     font-size: 28;
-    right: 100px;
-    top: 40px;
+    right: 2%;
+    top: 10%;
     position: absolute;
 }
 
 nav li{
     display: inline;
-    margin-right: 80px;
+    margin-right: 40px;
     font-family: cursive;
     font-size: 35px;
 }
+
 nav li a{
     color: white;
     text-decoration: none;
 }
 
+
 /*Estilização da DIV do header */
 .divHeader {
     position: relative;
-}
-
-/*Estilização do BANNER abaixo do header*/
-.banner {
-    width: 100%;
-    height: 40%;
-    object-fit: cover;
 }
 
 /*Estilização da sessão SOBRE NÓS*/
@@ -74,7 +69,7 @@ nav li a{
 /*Estilização da sessão NOSSOS PRODUTOS*/
 .nossosprodutos{
     padding: 2%;
-    background: linear-gradient(#dad4f1, rgb(180, 111, 180));
+    background: linear-gradient(#dad4f1, rgb(78, 8, 116));
 }
 .div_nossosprodutos{
     width: 70%;
@@ -105,25 +100,55 @@ nav li a{
 .video{
     padding: 3% 0 0 20%;
 }
-/*Estilização do Footer*/
+/*Footer*/
 footer{
-    background: url("../img/fundo_rodape.png");
+	background: url("../img/fundo_rodape.png");
     background-size: cover;
     background-position: center;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
-    padding: 30px 10px 10px 0;
+	padding: 30px 10px 10px 0;
 }
 footer p{
-    color: white;
     font-weight: bold;
-    font-size: 20px;
+    color: white;
+    width: 100%;
     text-align: right;
+    font-size: 20px;
 }
 footer i{
     color: white;
 }
 .logo_footer{
-    width: 12%;
+	width: 15%;
     padding-left: 85%;
+}
+
+/*Estilização do Slider*/
+.carrossel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.carrossel img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+}
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(119, 6, 249, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: grab;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
 }

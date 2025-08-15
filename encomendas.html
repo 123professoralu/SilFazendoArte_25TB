@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Sil Fazendo Arte</title>
+        <link rel="icon" href="img/cat_icon.ico" type="image/x-icon">
+        <link href="css/estilos_encomendas.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="img/logo.png" title="Sil Fazendo Arte" class="logo"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                        <li>|</li> 
+                        <li>Encomendas</li>
+                    </ul>
+                </nav>
+            </div>
+       </header>
+       <main>
+            <ul class="encomendas-titulo">
+                <li class="encomendas-item"> Encomendas</li>
+            </ul>
+            <section class="container">
+                <!--Tabela das Encomendas-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-clientes">
+                        <tr class="cliente">
+                            <td class="nome">Carolina</td>
+                            <td class="produto">Tapetes Cozinha (3 peças) - Azul</td>
+                            <td class="qtde">3</td>
+                            <td class="unitario">50</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Margarete</td>
+                            <td class="produto">Jogo Americano (4 peças) - Rosa</td>
+                            <td class="qtde">2</td>
+                            <td class="unitario">85</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Daniele</td>
+                            <td class="produto">Pulseira Cristal Colorida</td>
+                            <td class="qtde">1</td>
+                            <td class="unitario">25</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Daniele</td>
+                            <td class="produto">Pulseira Cristal - Rosa</td>
+                            <td class="qtde">3</td>
+                            <td class="unitario">25</td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <!--Rodapé do Site-->
+       <footer>
+            <img src="img/logo.png" alt="Sil Fazendo Arte" class="logo_footer">
+            <p><a class="whatsapp-link" href="https://wa.me/5599111112222" target="_blank">
+                <i class="fa fa-whatsapp"></i></a>(11) 99236-8297 | 
+                <i class="fa fa-instagram"></i> @silfazendoarte_
+            </p>
+        </footer>
+        <script src="js/encomenda.js"></script>
+    </body>
+</html>

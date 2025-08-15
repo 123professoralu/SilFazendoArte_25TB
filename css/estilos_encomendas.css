@@ -1,0 +1,102 @@
+/*Estilização do BODY da página*/
+body{
+    margin: 0;
+    border: 0;
+    font-family: 'Tahoma', 'Arial';
+}
+/*Estização do HEADER da página*/
+header{
+    background-color: rgb(78, 8, 116);
+    padding: 10px 0 20px 200px;
+}
+
+main {
+    background: linear-gradient(#FFFFFF, #dad4f1);
+    margin: 0;
+    padding: 15px;
+}
+
+.logo {
+    width: 10%;
+}
+/*Estilização do MENU do site*/
+nav {
+    color: white;
+    font-size: 26;
+    right: 3%;
+    top: -5%;
+    position: absolute;
+}
+
+nav li{
+    display: inline;
+    margin-right: 40px;
+    font-family: cursive;
+    font-size: 35px;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilização da DIV do header */
+.divHeader {
+    position: relative;
+}
+
+/*Título*/
+.encomendas-titulo{
+	font-size: 40px;
+	font-weight: bold;
+	color:  rgb(78, 8, 116);
+    font-family: cursive;
+    list-style: none;
+}
+.encomendas-item:before{
+	content: "🐈";
+}
+/*Tabela de Encomendas*/
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+td, th{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+    background-color: #EEE;
+}
+
+/*Footer*/
+footer{
+	background: url("../img/fundo_rodape.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Define a transparência */
+    background-blend-mode: darken; /* Mistura as cores */
+	padding: 30px 10px 10px 0;
+}
+footer p{
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+}
+footer i{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.logo_footer{
+	width: 15%;
+    padding-left: 85%;
+}

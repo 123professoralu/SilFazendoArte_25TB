@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Sil Fazendo Arte</title>
+        <link href="css/estilos_contatos.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="img/logo.png" title="Sil Fazendo Arte" class="logo"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li>Contato</li>
+                    </ul>
+                </nav>
+            </div>
+       </header>
+       <main>
+            <ul class="contatos-titulo">
+                <li class="contatos-item"> Contatos</li>
+            </ul>
+            <p>
+                Será uma alegria te atender! <br></br>
+                Você pode nos encontrar no Instagram, no WhatsApp ou preencher o formulário abaixo.
+            </p>
+            <form id="frmContato">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label>* Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                    <label>E-mail</label>
+                    <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                    <label>Telefone</label>
+                    <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                    <label>* Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                    <label>Como prefere o nosso contato?
+                        <input type="radio" value="radio-mail" name="Contato"> E-mail
+                        <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                        <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                    </label>
+
+                    <br>
+                    <label>Qual o motivo do seu contato?
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </label>
+                    <br>
+                </fieldset>
+
+                <label><input type="checkbox" class="chk" > Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" id="enviar" value="Enviar formulário" class="enviar">
+            </form>
+       </main>
+       <!--Rodapé do Site-->
+       <footer>
+        <img src="img/logo.png" alt="Sil Fazendo Arte" class="logo_footer">
+        <p><a class="whatsapp-link" href="https://wa.me/5599111112222" target="_blank">
+            <i class="fa fa-whatsapp"></i></a>(11) 99236-8297 | 
+            <i class="fa fa-instagram"></i> @silfazendoarte_
+        </p>
+    </footer>
+    </body>
+</html>
