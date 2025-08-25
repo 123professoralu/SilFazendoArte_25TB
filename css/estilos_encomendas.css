@@ -56,21 +56,31 @@ nav li a{
 .encomendas-item:before{
 	content: "🐈";
 }
-/*Tabela de Encomendas*/
+
+/*Estilização da Tabela de Encomendas*/
 table{
     width: 100%;
     margin-bottom: 2%;
     table-layout: fixed;
 }
-td, th{
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
+td, th {
     padding: 10px;
     margin: 0;
     border: 1px solid #ccc;
     text-align: center;
 }
-th {
-    font-weight: bold;
-    background-color: #EEE;
+
+/*Destaque da informação inválida*/
+.info-invalida {
+    background-color: red;
+    color: white;
+}
+.info-invalida2 {
+    color: red;
 }
 
 /*Footer*/
