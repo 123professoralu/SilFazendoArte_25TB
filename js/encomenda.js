@@ -1,41 +1,64 @@
-//Código para calcular o total de 1 linha
-//document.querySelector(".total").textContent=document.querySelector(".qtde").textContent * document.querySelector(".unitario").textContent
+//document.querySelector(".total").textContent=
+// document.querySelector(".qtde").textContent * 
+// document.querySelector(".unitario").textContent
 
-//Captura todas as encomendas para calcular o total
+//Captura as encomendas da tabela
 var clientes = document.querySelectorAll(".cliente");
 
-for (var count=0; count < clientes.length; count++) {
+//Passa por todas as encomendas e calcula o valor total
+for (var count=0; count < clientes.length; count++){
     
-    //Captura a quantidade da encomenda
+    //Quantidade da encomenda
     var tab_qtde = clientes[count].querySelector(".qtde").textContent;
-
-    //Captura o valor unitário da encomenda
+    
+    //Valor unitário da encomenda
     var tab_unitario = clientes[count].querySelector(".unitario").textContent;
 
-    //Valida a quantidade
+    //Verifica se a quantidade é válida
     if(tab_qtde < 1 || isNaN(tab_qtde)){
-        //Quantidade é inválida
-        clientes[count].querySelector(".qtde").textContent = "Qtde inválida";
-        clientes[count].classList.add("info-invalida");
+        //A quantidade é menor que 1 ou não é númerica
+        clientes[count].querySelector(".qtde").textContent = "Quantidade inválida!";
+        //Texto da quantidade em vermelho
+        //clientes[count].querySelector(".qtde").style.color = "red";
+
+        //Linha toda com texto vermelho
+        //clientes[count].style.color = "red";
+
+        //Linha toda fique vermelha
+        // clientes[count].style.backgroundColor = "red";
+        // clientes[count].style.color = "white";
+        clientes[count].classList.add("info_invalida");
+
     } else {
-        //Verifica se o valor unitário é inválido
-        if(tab_unitario < 0 || isNaN(tab_unitario)){
-            //Unitário é inválido
-            clientes[count].querySelector(".unitario").textContent = "R$ Unitário inválido";
-            clientes[count].classList.add("info-invalida2");
+        //Verifica se o valor unitário é válido
+        if(tab_unitario <=0 || isNaN(tab_unitario)){
+            //O unitário é menor ou igual a 0 ou não é numérico
+            clientes[count].querySelector(".unitario").textContent = "R$ Unitário inválido!";
+            clientes[count].style.color = "red";
         } else {
-            //Calcula o valor total
-            clientes[count].querySelector(".total").textContent = calculaTotal(tab_qtde,tab_unitario);   
-            clientes[count].querySelector(".unitario").textContent = parseFloat(tab_unitario).toLocaleString('pt-BR', {style:'currency',currency:'BRL'});
+            //Calcula e exibe o total
+            clientes[count].querySelector(".total").textContent =  calculaTotal(tab_qtde,tab_unitario);
+
+            //Envia formatação para o valor unitário
+            clientes[count].querySelector(".unitario").textContent=formataValor(parseFloat(tab_unitario));
         }
     }
+
+    
 }
 
-//Função para cálculo do valor total
-function calculaTotal(qtde_encomenda, unit_encomenda){
-    var total = 0;
+//Função de cálculo do valor total
+function calculaTotal(qtde,unit){
+    var total=0;
 
-    total = qtde_encomenda * unit_encomenda;
+    total = qtde * unit;
+    
+    return formataValor(total);
+}
 
-    return total.toLocaleString('pt-BR', {style:'currency',currency:'BRL'});
+//Função que formata os valores em R$
+function formataValor(valor){
+    var valor_formatado = valor.toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+
+    return valor_formatado;
 }

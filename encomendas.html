@@ -23,51 +23,90 @@
             <ul class="encomendas-titulo">
                 <li class="encomendas-item"> Encomendas</li>
             </ul>
-            <!--Tabela de Encomendas-->
-            <table>
-                <!--Cabeçalho da tabela-->
-                <thead>
-                    <!--Linha-->
-                    <tr>
-                        <!--Coluna do cabeçalho da tabela-->
-                        <th>Nome</th>
-                        <th>Produto</th>
-                        <th>Quantidade</th>
-                        <th>Valor Unitário</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody class="tabela-clientes">
-                    <tr class="cliente">
-                        <td class="nome">Carolina</td>
-                        <td class="produto">Tapetes Cozinha (3 peças) - Azul</td>
-                        <td class="qtde">w</td>
-                        <td class="unitario">50</td>
-                        <td class="total"></td>
-                    </tr>
-                    <tr class="cliente">
-                        <td class="nome">Margarete</td>
-                        <td class="produto">Jogo Americano (4 peças) - Rosa</td>
-                        <td class="qtde">2</td>
-                        <td class="unitario">30</td>
-                        <td class="total"></td>
-                    </tr>
-                    <tr class="cliente">
-                        <td class="nome">Daniele</td>
-                        <td class="produto">Pulseira Cristal Colorida</td>
-                        <td class="qtde">3</td>
-                        <td class="unitario">QW</td>
-                        <td class="total"></td>
-                    </tr>
-                    <tr class="cliente">
-                        <td class="nome">Daniele</td>
-                        <td class="produto">Pulseira Cristal Vermelha</td>
-                        <td class="qtde">4</td>
-                        <td class="unitario">25</td>
-                        <td class="total"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="container">
+                <!--Tabela das Encomendas-->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-clientes">
+                        <tr class="cliente">
+                            <td class="nome">Carolina</td>
+                            <td class="produto">Tapetes Cozinha (3 peças) - Azul</td>
+                            <td class="qtde">3</td>
+                            <td class="unitario">50</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Margarete</td>
+                            <td class="produto">Jogo Americano (4 peças) - Rosa</td>
+                            <td class="qtde">w</td>
+                            <td class="unitario">85</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Daniele</td>
+                            <td class="produto">Pulseira Cristal Colorida</td>
+                            <td class="qtde">1</td>
+                            <td class="unitario">25.50</td>
+                            <td class="total"></td>
+                        </tr>
+                        <tr class="cliente">
+                            <td class="nome">Daniele</td>
+                            <td class="produto">Pulseira Cristal - Rosa</td>
+                            <td class="qtde">3</td>
+                            <td class="unitario">2o</td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--Formulário de inclusão de encomendas -->
+            <ul class="encomendas-titulo">
+                <li class="encomendas-item"> Adicionar encomenda</li>
+            </ul>
+            <section class="container">
+                <form id="form-adiciona">
+                    <div class="grupo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo">
+                    </div>
+                    <div class="grupo">
+                        <label for="qtde">Qtde:</label>
+                        <input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio">
+                    </div>
+                    <div class="grupo">
+                        <label for="produto">Produto:</label>
+                        <select id="produto" name="produto" class="campo campo-medio">
+                            <option value="">Selecione</option>
+                            <option>Jogo Americano (4 peças) - Rosa</option>
+                            <option>Jogo Americano (4 peças) - Amarelo</option>
+                            <option>Jogo Americano (4 peças) - Verde</option>
+                            <option>Tapetes Cozinha (3 peças) - Azul</option>
+                            <option>Tapetes Cozinha (3 peças) - Rosa</option>
+                            <option>Tapetes Cozinha (3 peças) - Amarelo</option>
+                            <option>Tapetes Cozinha (3 peças) - Vermelho</option>
+                            <option>Pulseira Cristal - Colorida</option>
+                            <option>Pulseira Cristal - Vermelha</option>
+                            <option>Pulseira Cristal - Rosa</option>
+                            <option>Pulseira Cristal - Lilás</option>
+                            <option>Pulseira Cristal - Preta</option>
+                        </select>
+                    </div>
+                    <div class="grupo">
+                        <label for="unitario">R$ Unitário:</label>
+                        <input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio">
+                    </div>
+
+                    <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button>
+                </form>
+            </section>
         </main>
         <!--Rodapé do Site-->
        <footer>
@@ -78,5 +117,6 @@
             </p>
         </footer>
         <script src="js/encomenda.js"></script>
+        <script src="js/adiciona_encomenda.js"></script>
     </body>
 </html>

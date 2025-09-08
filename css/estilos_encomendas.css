@@ -56,31 +56,82 @@ nav li a{
 .encomendas-item:before{
 	content: "🐈";
 }
-
-/*Estilização da Tabela de Encomendas*/
+/*Tabela de Encomendas*/
 table{
     width: 100%;
     margin-bottom: 2%;
     table-layout: fixed;
 }
-th{
-    font-weight: bold;
-    background-color: #EEE;
-}
-td, th {
+td, th{
     padding: 10px;
     margin: 0;
     border: 1px solid #ccc;
     text-align: center;
 }
+th {
+    font-weight: bold;
+    background-color: #EEE;
+}
 
-/*Destaque da informação inválida*/
-.info-invalida {
+/*Estilização das informações inválidas*/
+.info_invalida {
     background-color: red;
     color: white;
 }
 .info-invalida2 {
     color: red;
+}
+
+/*Formulário*/
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 90%;
+	border: 1px solid #ccc;
+	padding: .7em;
+    font-family: cursive;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+option:hover {
+	color: rgb(78, 8, 116);
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+    font-family: cursive;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:rgb(78, 8, 116);
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
 }
 
 /*Footer*/
