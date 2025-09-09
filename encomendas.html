@@ -24,6 +24,9 @@
                 <li class="encomendas-item"> Encomendas</li>
             </ul>
             <section class="container">
+                <!--Campo de filtragem da tabela-->
+                <label for="filtrar-tabela">Buscar:</label>
+                <input type="text" id="filtrar-tabela" class="filtrar-tabela" placeholder="Digite o cliente que deseja buscar">
                 <!--Tabela das Encomendas-->
                 <table>
                     <thead>
@@ -71,19 +74,20 @@
             <ul class="encomendas-titulo">
                 <li class="encomendas-item"> Adicionar encomenda</li>
             </ul>
+            <ul id="mensagem-erro"></ul>
             <section class="container">
                 <form id="form-adiciona">
                     <div class="grupo">
                         <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo">
+                        <input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo" required>
                     </div>
                     <div class="grupo">
                         <label for="qtde">Qtde:</label>
-                        <input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio">
+                        <input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio" required>
                     </div>
                     <div class="grupo">
                         <label for="produto">Produto:</label>
-                        <select id="produto" name="produto" class="campo campo-medio">
+                        <select id="produto" name="produto" class="campo campo-medio" required>
                             <option value="">Selecione</option>
                             <option>Jogo Americano (4 peças) - Rosa</option>
                             <option>Jogo Americano (4 peças) - Amarelo</option>
@@ -101,10 +105,10 @@
                     </div>
                     <div class="grupo">
                         <label for="unitario">R$ Unitário:</label>
-                        <input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio">
+                        <input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio" required>
                     </div>
 
-                    <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button>
+                    <input type="submit" id="adicionar-encomenda" class="botao bto-principal" value="Adicionar">
                 </form>
             </section>
         </main>
@@ -118,5 +122,7 @@
         </footer>
         <script src="js/encomenda.js"></script>
         <script src="js/adiciona_encomenda.js"></script>
+        <script src="js/remover_encomenda.js"></script>
+        <script src="js/buscar_encomenda.js"></script>
     </body>
 </html>

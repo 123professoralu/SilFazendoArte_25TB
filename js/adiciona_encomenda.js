@@ -1,6 +1,6 @@
 var botaoAdicionar = document.querySelector("#adicionar-encomenda");
 
-botaoAdicionar.addEventListener("click", function(event){
+botaoAdicionar.addEventListener("submit", function(event){
     event.preventDefault();
     
     //Captura o formulário
@@ -11,12 +11,12 @@ botaoAdicionar.addEventListener("click", function(event){
 
     //Captura a tabela de encomendas
     var tabela = document.querySelector("#tabela-clientes");
-
+    
     //Insere a nova encomenda na tabela
     tabela.appendChild(montaTR(novaEncomenda));
 
     //Limpa o formulário
-    form.reset();
+    form.reset(); 
 });
 
 //Captura os dados do formulário

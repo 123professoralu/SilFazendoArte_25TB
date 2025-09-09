@@ -134,6 +134,24 @@ button{
     margin: 10px 0px;
 }
 
+/*Efeito para linha sumir quando excluída*/
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+/*Campo de busca*/
+#filtrar-tabela{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/*Esconde a linha para a busca*/
+.invisivel {
+    display: none;
+}
+
 /*Footer*/
 footer{
 	background: url("../img/fundo_rodape.png");
